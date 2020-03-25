@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Description_Activity"
+    android:background="@android:color/holo_blue_light">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_id"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@android:color/darker_gray"
+        app:cardBackgroundColor="#F0FFD740"
+        app:cardCornerRadius="90dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="53dp"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                android:soundEffectsEnabled="false"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="#D5000000"
+                android:textSize="20sp"
+                app:fontFamily="@font/alfa_slab_one" />
+
+            <TextView
+                android:id="@+id/des_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_des"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:text="Nothing In The Description Box!"
+                android:textAlignment="center"
+                android:textColor="#FBFBFC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-medium" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
